@@ -9,6 +9,24 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+.logo logo_place_header {
+    
+}
+
+.header__title {
+
+}
+
+.header__subtitle {
+
+}
+
+.header__square-pic {
+    
+    height: 568px;
+    width: 568px;
+}
+
 .header {
     height: 100vh;
     min-height: 600px;
@@ -16,11 +34,6 @@
     /* parameters for the header section */
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
-    height: 568px;
-    width: 568px;
-}
 
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
