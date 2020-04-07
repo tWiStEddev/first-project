@@ -9,30 +9,84 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.logo logo_place_header {
-    
+.header {
+    height: 100vh;
+    overflow: hidden;
+    min-height: 600px;
+    max-height: 756px;
+    background-color: #F2F2F2;
+    position: relative;
+    display: flex;
+    align-items: center;
+ /* parameters for the header section */
+}
+
+
+.logo {
+    width: 154px;
+    height: 31px;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo_place_header {
+    position: absolute;
+    top: 30px;
+    left: 64px;
+    background-image: url(./images/logo.png);
 }
 
 .header__title {
+    line-height: 96px;
+    font-size: 102px;
+    width: 730px;
+    margin-left: 64px;
+    position: relative;
+    font-weight: bold;
+    z-index: 1;
 
 }
 
 .header__subtitle {
+    line-height: 25px;
+    font-size: 18px;
+    width: 388px;
+    position: absolute;
+    left: 63px;
+    bottom: 30px;
+    margin: 0;
+    z-index: 1;
 
+}
+
+.header__link {
+    text-decoration: none;
+    color: #2F80ED;
 }
 
 .header__square-pic {
-    
+    background-color:#2F80ED;
     height: 568px;
     width: 568px;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    z-index: 0;
 }
 
-.header {
-    height: 100vh;
-    min-height: 600px;
-    max-height: 756px;
-    /* parameters for the header section */
+.header__main-illustration {
+    width: 765px;
+    height: 608px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
 }
+
+
 
 
 /* including elements with key-value modifiers */
