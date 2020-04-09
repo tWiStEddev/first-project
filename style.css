@@ -9,6 +9,12 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+.flex-row {
+    display: flex;
+    position: relative;
+}
+
+
 .header {
     height: 100vh;
     overflow: hidden;
@@ -50,12 +56,13 @@
 .header__subtitle {
     line-height: 25px;
     font-size: 18px;
+    font-weight: normal;
     width: 388px;
     position: absolute;
     left: 63px;
     bottom: 30px;
     margin: 0;
-    z-index: 1;
+    z-index: 2;
 
 }
 
