@@ -153,6 +153,8 @@ a, div, p, h1, h2, .digits {
     font-size: 60px;
     font-weight: bold;
     padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .section_subtitle {
@@ -163,13 +165,14 @@ a, div, p, h1, h2, .digits {
     margin: auto;
     align-items: center;
     text-align: center;
+    margin-top: 20px;
 }
 
 .table {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: auto
+    margin: 0 auto 100px;
     list-style: none;
     width: 1100px;
     padding-left: 0;
@@ -184,10 +187,10 @@ section {
     text-align: left;
     margin-top: 60px;
     width: 250px;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 0px;
     margin-right: 5px;
-    
+    list-style-type: none;    
 }
 
 .table__cell-heading {
@@ -196,15 +199,17 @@ section {
     font-weight: bold;
     line-height: 1.15;
     text-align: left;
-}
+    margin-bottom: 20px;
+} 
 
 .table__cell-text {
     font-size: 18px;
     font-style: normal;
     line-height: 1.2;
-    margin-top: 60px;
     text-align: left;
 }
+
+
 
 
 /* including elements with key-value modifiers */
