@@ -215,12 +215,11 @@ section {
 
 .feynman {
     min-width: 867px;
+    max-width: 775px;
     height: 790px;
     background-image: url('./images/feynman.png');
     background-color: #f2f2f2;
-    display: flex;
     margin-bottom: 0;
-    flex-direction: column;
     position: absolute;
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -228,11 +227,9 @@ section {
 }
 
 .feynman__title {
-    max-width: 775px;
+    justify-content: stretch;
     text-align: center;
     align-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
     line-height: 1.15;
     font-size: 120px;
     font-weight: bold;
@@ -261,46 +258,38 @@ section {
 
 .kaufman {
     background-color: #1F1F1F;
-    display: flex;
-    margin-top: 0;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
     justify-content: center;
-    flex-direction: column;
-    position: absolute;
-    overflow: hidden;
+    width: 877px;
+    height: 877px;
+    position: relative;
+    border: 5px yellow; 
 }
 
 .kaufman_triangle {
     background-image: url(./images/triangle.svg);
     background-repeat: no-repeat;
-    width: 877px;
-    height: 877px;
+    
     position: absolute;
+    overflow: hidden;
     right: -210px;
-    top: 0px;
     z-index: 1;
 }
 
 .setion-title__theme_dark {
     color:#F2F2F2;
-    margin: 90px auto 20px;
     font-size: 60px;
     line-height: 69px;
     font-weight: bold;
-    max-width: 80%;
-    z-index: 2;
 }
 
 .section-subtitle__theme_dark {
-    margin-top: 20px;
-    align-content: center;
     line-height: 34px;
     font-size: 24px;
-    margin-bottom: 90px;
-    position: absolute;
     font-weight: normal;
     color: #F2F2F2;
-    text-align: center;
-    z-index: 2;
 }
 
 .table__theme_dark {
@@ -310,7 +299,6 @@ section {
     position: absolute;
     flex-wrap: wrap;
     margin: 90px auto;
-    z-index: 2;
 }
 
 .table__heading_theme_dark {
@@ -324,7 +312,8 @@ section {
     max-width: 200px;
     color: white;
     list-style: none;
-    margin-bottom: 80px;
+    margin-right: 0;
+    margin-top: 80px;
 }
 
 .table__text_theme_dark {
