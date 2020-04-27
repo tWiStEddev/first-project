@@ -272,31 +272,29 @@ section {
     z-index: 1;
 }
 
-
-
-
-.kaufman {
-    background-color: #1F1F1F;
-    margin: 0 0 20px;
-    display: flex;
-    flex-flow: row wrap;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    justify-content: center;
-    position: relative;
-    border: 5px solid green; 
-}
-
-/*.kaufman_triangle {
+.kaufman_triangle {
     background-image: url(./images/triangle.svg);
     background-repeat: no-repeat;
     position: absolute;
-    width: 877px;
-    height: 877px;
     overflow: hidden;
     right: -210px;
     z-index: 2;
 }
+
+
+.kaufman {
+    /*background-color: #1F1F1F;*/
+    width: 877px;
+    height: 877px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    padding: 25px;
+    z-index: 1;
+    border: 5px solid green; 
+}
+
+
 
 .setion-title__theme_dark {
     color:#F2F2F2;
@@ -344,7 +342,7 @@ section {
     font-weight: normal;
 }*/
 
-.footer {
+.footer {/*
     background-color: #1F1F1F;
     min-height: 350px;
     margin: auto;
