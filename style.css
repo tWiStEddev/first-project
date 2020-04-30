@@ -283,23 +283,23 @@ section {
 
 
 .kaufman {
-    /*background-color: #1F1F1F;*/
-    width: 877px;
+    background-color: #1F1F1F;
+    /*width: 877px;*/
     height: 877px;
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
+    display:
+    margin: 5px;
+    margin-right: auto;
     padding: 25px;
     z-index: 1;
     border: 5px solid green; 
 }
 
 
-
 .setion-title__theme_dark {
+    justify-content: center;
     color:#F2F2F2;
     display: flex;
-    flex-flow: row wrap;
+    width: 60%;
     font-size: 60px;
     line-height: 69px;
     font-weight: bold;
@@ -323,13 +323,14 @@ section {
 .table__heading_theme_dark {
     line-height: 1.15;
     font-size: 24px;
-    display: inline-table;
+    /*display: inline-table;*/
     font-weight: bold;
     padding-bottom: 20px;
 }
 
 .table__cell_theme_dark {
     max-width: 200px;
+    margin-left: auto;
     color: white;
     list-style: none;
     margin-right: 0;
@@ -342,7 +343,7 @@ section {
     font-weight: normal;
 }
 
-.footer {/*
+/*.footer {
     background-color: #1F1F1F;
     min-height: 350px;
     margin: auto;
