@@ -237,9 +237,12 @@ section {
 }
 
 .feynman__subtitle {
-    position: absolute;
-    margin-right: 25px;
-    margin-left: 40vw;
+    /*position: absolute;*/
+    width: 550px;
+    height: 51px;
+    border-left: 200px;
+    margin-right: 50px;
+    margin-left: 37vw;
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
@@ -248,10 +251,14 @@ section {
 
 .feynman__link {
     text-decoration: none;
-    margin-left: 88vw;
-    margin-top: 48px;
     color: #000000;
     position: absolute;
+    top: 50%;
+    margin-top: -318.5px;
+    left: 50%;
+    margin-left: 395px;
+    padding-top: 120px;
+    padding-left: 135px;
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
@@ -276,29 +283,40 @@ section {
     background-image: url(./images/triangle.svg);
     background-repeat: no-repeat;
     position: absolute;
+
     overflow: hidden;
     right: -210px;
-    z-index: 2;
+    z-index: 1;
+}
+
+#overlay {
+    position: fixed;
+    background-position: top right; 
+    width: inherit;
+    height: inherit; 
+    z-index: 0;
 }
 
 
 .kaufman {
-    background-color: #1F1F1F;
-    /*width: 877px;*/
+    background-color:/* #1F1F1F;*/ red;
+    min-width: 877px;
     height: 877px;
-    display:
-    margin: 5px;
-    margin-right: auto;
-    padding: 25px;
-    z-index: 1;
+    /*display: flex;*/
+    align-self: center;
+    justify-content: center;
+    /*flex-direction: column;*/
     border: 5px solid green; 
 }
 
 
 .setion-title__theme_dark {
-    justify-content: center;
+    text-align: center;
     color:#F2F2F2;
     display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 20px;
     width: 60%;
     font-size: 60px;
     line-height: 69px;
@@ -315,15 +333,15 @@ section {
 .table__theme_dark {
     Width: 1100px;
     display: flex;
-    position: absolute;
-    flex-flow: row wrap;
+    /*position: absolute;*/
+    flex-flow: wrap;
     margin: 90px auto;
 }
 
 .table__heading_theme_dark {
     line-height: 1.15;
     font-size: 24px;
-    /*display: inline-table;*/
+    display: inline-table;
     font-weight: bold;
     padding-bottom: 20px;
 }
