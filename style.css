@@ -9,11 +9,6 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/*.flex-row {
-    display: flex;
-    position: relative;
-}*/
-
 .header {
     height: 100vh;
     overflow: hidden;
@@ -83,8 +78,8 @@
 .header__main-illustration {
     width: 765px;
     height: 608px;
-    background-size: cover;
-    background-position: center;
+    /* background-size: cover; */
+    /* background-position: center; */
     position: absolute;
     bottom: 0;
     right: 0;
@@ -147,10 +142,11 @@ section {
 
 .digits {
     margin:100px auto 0 auto;
+    display: flex;
     flex-direction: column;
 }
 
-.section_title {
+.digits__title {
     display: flex;
     justify-content: center;
     line-height: 69px;
@@ -161,7 +157,7 @@ section {
     margin-top: 0px;
 }
 
-.section_subtitle {
+.digits__subtitle {
     width: 60%;
     line-height: 34px;
     font-size: 24px;
@@ -175,33 +171,24 @@ section {
 .table {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    margin-top: 60px;
-    /*list-style: none;*/
+    align-self: center;
     width: 1100px;
-    /*padding-left: 25px;*/
 }
 
-/*section {
+.table__cell {
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
-}*/
-
-.table__cell {
-    text-align: left;
-    margin-top: 60px;
+    flex-direction:  column;
     width: 250px;
-    align-content: center;
-    /*justify-content: center;
-    /*justify-content: space-between;*/
-    /*margin-left: ;*/
-    margin-right: 5px;
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    margin-right: 25px;
     list-style-type: none;    
 }
 
-.table__cell-heading {
+.table__heading {
     margin-top: 0;
     font-size: 24px;
     font-weight: bold;
@@ -210,7 +197,7 @@ section {
     margin-bottom: 20px;
 } 
 
-.table__cell-text {
+.table__text {
     font-size: 18px;
     font-style: normal;
     line-height: 1.2;
@@ -228,7 +215,7 @@ section {
     max-width: 775px;
     text-align: center;
     margin: auto;
-    margin-top: -230px;
+    margin-top: -210px;
     /*align-content: space-between;*/
     line-height: 1.15;
     font-size: 120px;
@@ -237,7 +224,6 @@ section {
 }
 
 .feynman__subtitle {
-    /*position: absolute;*/
     width: 550px;
     height: 51px;
     border-left: 200px;
@@ -279,59 +265,44 @@ section {
     z-index: 1;
 }
 
-.kaufman_triangle {
+.kaufman__triangle {
     background-image: url(./images/triangle.svg);
     background-repeat: no-repeat;
     position: absolute;
-
-    overflow: hidden;
     right: -210px;
+    top: 0px;
     z-index: 1;
-}
-
-#overlay {
-    position: fixed;
-    background-position: top right; 
-    width: inherit;
-    height: inherit; 
-    z-index: 0;
 }
 
 
 .kaufman {
-    background-color:/* #1F1F1F;*/ red;
+    background-color: #1F1F1F;
     min-width: 877px;
     height: 877px;
-    /*display: flex;*/
-    align-self: center;
     justify-content: center;
-    /*flex-direction: column;*/
-    border: 5px solid green; 
+    border: 5px solid green;
 }
 
 
-.setion-title__theme_dark {
+.kaufman__title_theme_dark {
     text-align: center;
     color:#F2F2F2;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
     margin-bottom: 20px;
-    width: 60%;
     font-size: 60px;
     line-height: 69px;
     font-weight: bold;
 }
 
-.section-subtitle__theme_dark {
+.kaufman__subtitle_theme_dark {
     line-height: 34px;
+    text-align: center;
     font-size: 24px;
     font-weight: normal;
     color: #F2F2F2;
 }
 
-.table__theme_dark {
-    Width: 1100px;
+.table_theme_dark {
+    /* Width: 1100px; */
     display: flex;
     /*position: absolute;*/
     flex-flow: wrap;
@@ -341,7 +312,6 @@ section {
 .table__heading_theme_dark {
     line-height: 1.15;
     font-size: 24px;
-    display: inline-table;
     font-weight: bold;
     padding-bottom: 20px;
 }
@@ -352,7 +322,7 @@ section {
     color: white;
     list-style: none;
     margin-right: 0;
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 .table__text_theme_dark {
@@ -361,7 +331,7 @@ section {
     font-weight: normal;
 }
 
-/*.footer {
+.footer {
     background-color: #1F1F1F;
     min-height: 350px;
     margin: auto;
