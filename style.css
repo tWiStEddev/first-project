@@ -258,7 +258,7 @@ section {
     background-color: #f2f2f2;
     margin-left: 0px;
     padding-top: 100px;
-    margin-top: 100px;
+     margin-top: 100px;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: contain;
@@ -276,11 +276,12 @@ section {
 
 
 .kaufman {
+    padding-top: 90px;
     background-color: #1F1F1F;
     min-width: 877px;
     height: 877px;
     justify-content: center;
-    border: 5px solid green;
+    /* border: 5px solid green; */
 }
 
 
@@ -302,7 +303,7 @@ section {
 }
 
 .table_theme_dark {
-    /* Width: 1100px; */
+    Width: 1100px;
     display: flex;
     /*position: absolute;*/
     flex-flow: wrap;
@@ -335,32 +336,40 @@ section {
     background-color: #1F1F1F;
     min-height: 350px;
     margin: auto;
-    padding-top:  60px;
-    padding-right: 0;
-    padding-bottom: 40px;
+    /* padding-top:  60px; */
+    /* padding-right: 0; */
+    /* padding-bottom: 40px; */
+    position: relative;
 }
 
 .footer__columns {
-    width: 90px;
-    justify-content: space-between;
+    /* width: 90px; */
+    /* justify-content: space-between; */
     display: flex;
+    flex-direction: row;
 }
 
 .footer__columns_content_copyright {
     flex-basis: 711px;
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     justify-content: left;
 }
 
 .footer__columns_content_info {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .footer__columns-heading {
     margin-bottom: 20px;
+    color: white;
+    position: absolute;
+    right: 210px;
+    top: 30px;
+    height: 45px;
+    font-weight: bold;
 }
 
 .footer__columns-link {
@@ -373,11 +382,12 @@ section {
 }
 
 .footer__author {
+    color: white;
     padding-top: 18px;
-    margin-bottom: 18px;
+    padding-bottom: 18px;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 64px;
+    bottom: 30px;
 }
 
 .logo_place_footer {
@@ -385,6 +395,6 @@ section {
     height: 35px;
     background-size: contain;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 30px;
+    left: 64px;
 }
