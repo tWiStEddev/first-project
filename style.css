@@ -350,72 +350,88 @@ section {
 
 .footer {
     background-color: #1F1F1F;
-    /* display: flex; */
+    display: flex;
     min-height: 350px;
-    /* margin: auto; */
+    margin: auto;
     padding-top:  60px;
     padding-right: 0;
     padding-bottom: 40px;
-    /* position: relative; */
+    position: relative;
 }
 
 .footer__columns {
     border: 3px solid pink;
-    width: 90px;
-    /* justify-content: space-between; */
+    width: 90%;
+    justify-content: space-around;
     display: flex;
-    /* flex-direction: row; */
+    margin-top: 60px;
+    margin-bottom: 40px;
+    flex-direction: row;
 }
 
 .footer__columns_content_copyright {
-    /* flex-basis: 711px; */
-    /* display: flex; */
-    /* position: absolute; */
-    /* justify-content: left; */
+    flex-basis: 711px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer__columns_content_info {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
+    /* list-style: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: 0; */
+    /* padding:0; */
 }
 
-.footer__columns-heading {
+.footer__column-heading {
     margin-bottom: 20px;
     color: white;
-    position: absolute;
-    left: 656px;
-    top: 3564px;
+    /* position: absolute; */
+    /* left: 656px; */
+    /* top: 3564px; */
     line-height: 45px;
+    font-size: 18px;
     font-weight: bold;
 }
 
-.footer__columns-link {
+.footer__column-links {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+.footer__column-link {
+    color: #fff;
+    text-decoration: none;
     /* padding-bottom: 16px; */
     /* list-style: none; */
 }
 
 .footer__social-icon {
-    /* height: 16px; */
-    /* color: white; */
-    /* list-style: none; */
-    /* width: 16px; */
+    height: 16px;
+    padding-right: 10px;
+    color: white;
+    list-style: none;
+    width: 16px;
 }
 
 .footer__author {
-    /* color: white; */
-    /* padding-top: 18px; */
-    /* padding-bottom: 18px; */
-    /* position: absolute; */
-    /* left: 64px; */
-    /* bottom: 30px; */
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: absolute;
+    left: 64px;
+    bottom: 30px;
 }
 
 .logo_place_footer {
-    /* width: 183px; */
-    /* height: 35px; */
+    width: 183px;
+    height: 35px;
     /* background-size: contain; */
-    /* position: absolute; */
-    /* top: 30px; */
-    /* left: 64px; */
+    position: absolute;
+    top: 30px;
+    left: 64px;
 }
