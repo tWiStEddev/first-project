@@ -133,9 +133,9 @@
     /*font-weight: bold;*/
 }
 
-a, div, p, h1, h2 {
-    border: 1px solid red;    
-} 
+/* a, div, p, h1, h2 { */
+    /* border: 1px solid red;     */
+/* }  */
 
 section {
     /* border: 2px solid blue; */
@@ -292,10 +292,11 @@ section {
     background-repeat: no-repeat;
     position: absolute;
     right: -210px;
-    margin-right: 210px;
-    /* left: 907px; */
+    margin-right: 210px; 
+    left: 907px;
     /* top: 2782px; */
     overflow: hidden;
+    background-size: contain;
     width: 877px;
     height: 877px;
     z-index: 2;
@@ -303,16 +304,11 @@ section {
 
 
 .kaufman {
-    /* padding-top: 90px; */
     padding-bottom: 90px;
     background-color: #1F1F1F;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    /* min-width: 877px; */
-    /* height: 877px; */
-    /* justify-content: center; */
-    /* border: 5px solid green; */
 }
 
 
@@ -334,6 +330,7 @@ section {
     line-height: 34px;
     text-align: center;
     font-size: 24px;
+    margin-bottom: 80px;
     /* width: 60%; */
     font-weight: normal;
     color: #F2F2F2;
@@ -343,7 +340,7 @@ section {
     Width: 1100px;
     display: flex;
     /*position: absolute;*/
-    flex-flow: wrap;
+    flex-wrap: wrap;
     margin: auto;
 }
 
@@ -403,18 +400,18 @@ section {
 .footer__columns_content_info {
     /* list-style: none; */
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* margin: 0; */
-    /* padding:0; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    margin-right:100px;
+    padding: 45px;
 }
 
 .footer__column-heading {
     margin-bottom: 20px;
     color: white;
-    /* position: absolute; */
-    /* left: 656px; */
-    /* top: 3564px; */
+    position: absolute;
+    right: 398px;
+    bottom:243px;
     line-height: 45px;
     font-size: 18px;
     font-weight: bold;
@@ -425,6 +422,7 @@ section {
     font-size: 18px;
     font-weight: normal;
     margin-bottom: 16px;
+    list-style: none;
 }
 
 .footer__column-link {
@@ -448,7 +446,7 @@ section {
     padding-bottom: 18px;
     position: absolute;
     left: 64px;
-    bottom: 30px;
+    top: 303px;
 }
 
 .logo_place_footer {
@@ -456,6 +454,6 @@ section {
     height: 35px;
     /* background-size: contain; */
     position: absolute;
-    top: 30px;
+    bottom: 272px;
     left: 64px;
 }
